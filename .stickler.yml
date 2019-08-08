@@ -1,6 +1,5 @@
-    linters:
-    phpcs:
-        standard: PSR2
+linters:
+	phpcs:  standard: PSR2
         fixer: true
     eslint:
         config: eslint.json
