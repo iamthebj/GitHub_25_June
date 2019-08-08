@@ -6,6 +6,7 @@ linters:
   shellcheck:
     shell: bash
   rubocop:
+    display_cop_names: true
     fixer: true
 files:
   ignore:
