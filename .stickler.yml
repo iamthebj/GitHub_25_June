@@ -1,5 +1,7 @@
+---
 linters:
-    phpcs:  standard: PSR2
+    phpcs:
+        standard: PSR2
         fixer: true
     eslint:
         config: eslint.json
@@ -43,3 +45,7 @@ linters:
     rubocop:
         display_cop_names: true
         fixer: true
+    files:
+    ignore:
+        - 'src/generated/*'
+        - 'webroot/bower_components/*'
