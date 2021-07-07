@@ -12,24 +12,7 @@
 
         ini_set('display_errors', 1);
 
-        $url = "https://books.zoho.com/api/v3/invoices/".$invoice_id;
-        
-        
-        $editThisEmail = array(
-            "to_mail_ids" => $email,
-            "cc_mail_ids" => $cc_email,
-            "subject" => $subject,
-            "body" => $email_body
-        );
-        
-        $jsonEditThisEmail = json_encode($editThisEmail);
-        
-        $data = array(
-            'JSONString' => $jsonEditThisEmail,
-            "organization_id"  => '677074428',
-            "send" => 'false'
-        );
-        $curl = curl_init($url);
+        $url 
         curl_setopt_array($curl, array(
             CURLOPT_POSTFIELDS => http_build_query($data),
             CURLOPT_RETURNTRANSFER => true,
